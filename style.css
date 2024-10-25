@@ -1,0 +1,1353 @@
+:root{
+    --blue: #1363df;
+    --white: #ffffff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+
+/* header CSS Starts here */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--blue);
+    padding: 0.76rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 0.5rem rgba(255, 255, 255, 0.1);
+}
+
+header .logo{
+    font-size: 1.5rem;
+    color: var(--white);   
+}
+
+header .navbar a{
+font-size: 1rem;
+color: var(--white);
+text-decoration: none;
+padding: 10px;
+
+}
+
+header .navbar a:hover{
+    color: var(--white);
+    border-bottom: 3px solid #fff;
+    border-bottom-width: thick;
+    /* width: 10%;
+    height: 10%; */
+}
+
+.navbar a.active {
+    border-bottom: 3px solid #fff;
+    border-bottom-width: thick;
+    /* width: 2%;
+    height: 10%; */
+}
+
+header .icons a{
+    font-size: 1.5rem;
+    color: var(--white);
+    
+}
+
+header .icons a:hover{
+    color: rgb(252, 132, 196);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 1rem;
+    color: var(--white);
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,0.3);
+    display: none;
+}
+
+/* header CSS ends here */
+
+
+/* footer CSS Starts here */
+
+.footer{
+    padding: 0rem 10%;
+    /* margin-top: -10%; */
+}
+
+.footer .box-container{
+    display: flex;
+}
+
+.footer .box-container .box{
+    flex: 0 1 16rem;
+}
+
+.footer .box-container .box h3{
+    color: #172026;
+    font-size: 15px;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: #545D63;
+    font-size: 15px;
+    padding: 0.5rem 0;
+}
+.footer .box-container .box p{
+    color: #545D63;
+}
+.footer .box-container .box a:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.footer .box-container .box .icons{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    gap: 10%;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    border-top: 0.1rem solid rgba(0,0,0,0.1);
+}
+.lines-cart {
+    border: 1px solid #ddd;
+    width: 81%;
+    margin-left: 9%;
+    margin-top: 5%;
+    font-weight: normal;
+}
+.footer-logo-1{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.copyrights {
+    flex: 1;
+    text-align: center;
+    color: #545D63;
+}
+
+.terms-conditions a {
+    color: #172026;
+    text-decoration: underline;
+    margin: 4px;
+    font-weight: 100;
+}
+
+.terms-conditions a:hover {
+    text-decoration: underline var(--blue);
+}
+
+/* footer CSS ends here */
+
+
+/* product CSS starts here */
+.card{
+    display: flex;
+    margin-top: 4%;
+    justify-content: center;
+}
+
+.left img{
+    width: 263px;
+}
+.img{
+    margin-left: 12%;
+    padding: 0.5% 2%;
+}
+.card .img img{
+    width: 60px;
+    margin-left: 60px;
+    display: flex;
+}
+
+.card .right{
+    margin-top: 11px;
+    padding: 0% 4%;
+}
+
+.right h6{
+    margin-top: 11px;
+    font-weight: 100;
+}
+
+.right h1{
+    margin-top: 11px;
+}
+
+.right i{
+    margin-top: 11px;
+}
+
+.right p{
+    margin-top: 11px;
+}
+
+.right h4{
+    margin-top: 11px;
+}
+
+.right .product-head{
+    margin-top: 11px;
+    font-weight: 500;
+    font-size: 17px;   
+}
+
+.add-btn{
+    width: 200px;
+    height: 35px;
+    background-color: var(--blue);
+    color: var(--white);
+    margin-top: 11px;
+    border-radius: 3%;
+    font-size: 20px;
+    border: none;
+    
+}
+.add-btn:hover{
+background-color: #000;
+color: var(--white);
+}
+
+.right .share{
+    margin: 1% 0%;
+    padding: 0% 9%;
+}
+
+.content{
+    margin-top: 29px;
+    text-align: left;
+    padding: 1rem 17%;
+    font-size: 14px;
+}
+#btn-cards{
+    width: 70px;
+    text-align: center;
+    border: none;
+    font-size: 1.5em;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 9px;
+    color: grey;
+    border: 1px solid gainsboro;
+}
+
+.content-3{
+    margin-top: 11px;
+    font-size: 13px;
+    position: relative;
+}
+
+.content-2{
+    margin-top: 11px;
+}
+
+.content-3::after{
+border: 2px solid var(--blue);
+}
+
+.cart .left{
+    padding: 0% 1%;
+}
+
+.product-first-thumbnail{
+    border-bottom: 2px solid var(--blue);
+}
+
+/* product-sort css starts here */
+.product-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    margin-left: 92%;
+}
+
+#sortOptions {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.result-show{
+    margin-right: -18%;
+}
+
+#search-product{
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.text-show{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* product-sort css ends here */
+/* product CSS ends here */
+
+
+/* productdetails CSS starts here */
+.product-section{
+    padding: 0% 6%;
+    margin-top: -5%;
+
+}
+
+.product-main{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.filterbox{
+flex-basis: 23%;
+margin-top: -9%;
+}
+.product{
+    flex-basis: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.CategoryList{
+    margin-top: 15px;
+}
+.CategoryList label{
+    display: block;
+    padding: 10px 44px;
+    font-size: 14px;
+    margin-top: 7px;
+}
+.filterbox h5{
+    text-align: center;
+    padding-top: 10%;
+    font-weight: 100;
+
+}
+
+.filterbox h4{
+    margin-top: 19px;
+    text-align: left;
+    padding: 0px 46px;
+    font-weight: 100;
+    font-size: 16px;
+}
+hr{
+    border: 1px solid #ddd;
+    width: 90%;
+    margin-left: -1%;
+    margin-top: 2%;
+    font-weight: normal;
+}
+
+.product-linees{
+        border: 1px solid #ddd;
+        width: 77%;
+        margin-left: 18%;
+        margin-top: 4%;
+        font-weight: normal;
+}
+
+.product-items{
+    flex-basis: 31%;
+    margin-bottom: 20px;
+}
+
+.product-description{
+    background-color: #dcdcdc30;
+}
+
+.product-items img{
+    width: 100%;
+    height: 335px;
+}
+
+.product-items h5{
+    padding: 7px;
+
+}
+.product-items p{
+    font-size: 13px;
+    margin: 2px;
+}
+.product-items i{
+    padding: 0px;
+    margin: 2px;
+    font-size: 16px;
+}
+.product-items h3{
+    font-size: 14px;
+
+}
+.header1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+}
+/* productdetails CSS ends here */
+
+/* banner CSS starts here */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #e5e5e7;
+    gap: 11%;
+}
+
+.left-angle{
+    margin-left: 3%;
+    font-size: 2rem;
+}
+
+.banner-content {
+    width: 50%;
+    margin-left: -3%;
+    line-height: 1.4;
+}
+
+.banner-content h2 {
+    margin: 0;
+    color: #333;
+    font-size: 28px;
+    text-transform: initial;
+}
+
+.banner-content p {
+    font-size: 13px;
+    color: #666;
+}
+
+.shop-now {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 4px 31px;
+    background-color: var(--blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.shops-btn{
+    display: inline-block;
+    margin: 1%;
+    width: 52%;
+    padding: 4px 31px;
+    background-color: var(--white);
+    color: var(--blue);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--blue);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+.collection-text{
+    font-size: 13px;
+    margin-top: 5px;
+}
+.collection-heading{
+    font-weight: 100;
+    font-size: medium;
+    margin-top: 6px;
+}
+.lines{
+        border: 1px solid #ddd;
+        width: 81%;
+        margin-left: 9%;
+        margin-top: -7%;
+        font-weight: normal;
+}
+
+.shops-now{
+    display: inline-block;
+    /* margin-top: 20px; */
+    padding: 5px 3px;
+    background-color: var(--blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 60%;
+    margin: 7% 20%;
+}
+
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+}
+
+.container-column {
+    display: flex;
+    justify-content: space-around;
+    padding: 0% 12%;
+    margin-top: -3%;
+}
+
+.column {
+    position: relative;
+    width: 30%;
+    margin: 3px;
+}
+
+.column img {
+    width: 100%;
+    height: 42%;
+    display: block;
+}
+
+.content-banner {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 11px 23px;
+    text-align: left;
+    border-bottom: 5px solid var(--blue);
+    font-size: 12px;
+}   
+/* banner CSS ends here */
+
+/* collection css starts here */
+
+.collection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 0%;
+    margin: -9% 12%;
+
+}
+
+.collection-content{
+    line-height: 1.3;
+    position: relative;
+    margin: 4% 5%;
+}
+
+.collection-image img{
+    width: 100%;
+    height: auto
+}
+
+/* collection css ends here */
+
+/* adventure css starts here */
+
+.adventure {
+    display: flex;
+    height: 292px; 
+    background-size: cover;
+    position: relative;
+    margin: 13% 12%;
+}
+
+.left-side {
+    flex: 1;
+    position: relative;
+}
+
+.left-side img {
+    width: 111%;
+    height: 94%;
+}
+
+.right-side {
+    background-color: #1b252c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    line-height: 1.5;
+    margin-top: -1%;
+    width: 37%;
+    text-align: left;
+}
+
+.adventure-texts{
+    font-weight: 100;
+    margin-left: 15%;
+}
+
+.adventure-text1{
+    margin-left: 15%;
+}
+
+.adv-btn{
+    display: inline-block;
+    padding: 3px 0px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 42%;
+    margin: 7% 15%;
+    border: 2px solid var(--white);
+    text-align: center;
+}
+#adv-icon{
+    color: #ffffff;
+    z-index: 999;
+    font-size: 42px;
+    margin: 20.5% -1.6%;
+}
+
+
+#adv-icon::after{
+    content: '';
+    position: absolute;
+    left: 60%;
+    right: 0;
+    bottom: 13%;
+    height: 5px;
+    background: var(--blue);
+    width: 6%;
+
+}
+
+/* adventure css ends here */
+
+/* shoppingcart CSS starts here */
+
+/* shoppingcart CSS ends here */
+
+/* pagination css starts here */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #000;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination .active {
+    color: #000;
+    border-bottom: 1px solid #000;
+  
+}
+
+.right .btn-incrs{
+    padding: 2px 10px;
+    font-size: 1.5em;
+    background-color: #ffffff;
+    color: #9b9b9b;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 7px;
+    border-radius: 23px;
+    border: 1px solid gainsboro;
+}
+
+.btn-set{
+    width: 70px;
+    text-align: center;
+    border: none;
+    font-size: 1.5em;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 9px;
+    color: grey;
+    border: 1px solid gainsboro;
+}
+
+.product-banners{
+    display: flex;
+    height: 240px;
+    background-size: cover;
+    position: relative;
+    margin: 4% 0%;
+    width: 100%;
+}
+
+.product-content{
+    background-color: #1b252c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    line-height: 1.5;
+    margin-top: -1%;
+    width: 28%;
+    text-align: center;
+}
+
+.product-contents{
+    flex: 1;
+    position: relative;
+}
+
+.product-contents img{
+        width: 100%;
+        height: 225px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cart css starts here */
+.cards{
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+    padding: 1% 6%;
+}
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.cart-items {
+    width: 69%;
+}
+
+.cart-item {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+ 
+}
+
+#price{
+    display: flex;
+    margin: 10% 17%;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    padding: 3%;
+    width: 72%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: small;
+    font-weight: 700;
+}
+
+#paypal{
+    display: flex;
+    margin: -4% 15%;
+    background-color: #ffc43a;
+    color: #000000;
+    border: 1px solid #ffc43a;
+    padding: 3%;
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 17px;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.heading-cart{
+    text-align: center;
+    margin-top: 7%;
+    position: relative;
+}
+
+.item-image img {
+    width: 119px;
+    height: auto;
+}
+
+.item-details {
+    margin-left: 23px;
+    line-height: 2.0;
+}
+
+.quantity-increase {
+    display: flex;
+    align-items: center;
+}
+
+.btn-qcontrol {
+    padding: 2px 10px;
+    font-size: 1.5em;
+    background-color: #ffffff;
+    color: #9b9b9b;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 7px;
+    border-radius: 23px;
+    border: 1px solid gainsboro;
+}
+
+.btn-qcontrol:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.btn-control{
+    width: 70px;
+    text-align: center;
+    border: none;
+    font-size: 1.5em;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 9px;
+    color: grey;
+    border: 1px solid gainsboro;
+}
+.product-des{
+font-size: 14px;
+overflow: hidden;
+max-height: 55px;
+}
+
+.item-details{
+    font-size: 13px;
+
+}
+
+.price-summary {
+    width: 25%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.total {
+    font-weight: bold;
+}
+#subtotals{
+    font-weight: bold;
+}
+.heading{
+    text-align: center;
+    
+}
+.savelater{
+    margin-top: 3%;
+    margin-left: 21%;
+    position: static;
+    line-height: 2.3;
+    white-space: nowrap;
+}
+
+/* cart css ends here */
+
+/* checkout css starts here */
+.checkout-container {
+    width: 600px;
+    margin: auto;
+    background: white;
+    line-height: 1.8;
+ 
+}
+
+.accordion-container {
+    margin-bottom: 20px;
+}
+
+.accordion {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    color: #000;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: block;
+    background: white;
+    /* border-top: 1px solid #ddd; */
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+/* .accordion-header.active .arrow {
+    transform: rotate(90deg); }/* Rotate arrow when active */
+
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.checkout-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkout-accordian{
+    padding: 4% 12%;
+    margin: 2%;
+}
+
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+
+}
+.check{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+}
+#user-contact-form {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        gap: 1%;
+        margin-top: 2%;
+}
+
+#country{
+    padding: 10px 8px 10px 8px;
+    width: 47%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#state{
+    padding: 10px 8px 10px 8px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.form-group {
+    flex: 1; 
+    margin-right: 10px;
+}
+.form-group-payment {
+    flex: 1; 
+    margin-right: 10px;
+}
+.form-group:last-child {
+    margin-right: 0; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    width: max-content;
+}
+
+#checkout-button{
+    padding: 7px 22px;
+    background-color: #fff;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    margin: 10px 140px 0px;
+    font-weight: bold;
+}
+#reviews-button{
+    padding: 7px 22px;
+    background-color: #fff;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    margin: 10px 140px 0px;
+    font-weight: bold;
+}
+#payments-button{
+    padding: 7px 22px;
+    background-color: #fff;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    margin: 10px 140px 0px;
+    font-weight: bold;
+}
+
+.checkout-payment{
+    width: 44%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* cart accordian css starts here */
+
+.accordion-containers{
+    width: 60%;
+    margin: 0% 7%;
+    border: 1px solid #ddd;
+}
+.accordions {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* review order css starts here */
+.accordion-container-ship{
+    margin-bottom: 20px;
+    margin-left: -3%;
+    width: 97%;
+
+}
+
+.bill-line{
+    border-bottom: 1px solid #ddd;
+}
+.shipping-form-review{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    margin: 3% -8%;
+    width: 106%;
+
+}
+
+.checkout-container-review{
+    width: 692px;
+    margin: auto;
+    background: white;
+    line-height: 1.8;
+}
+
+/* checkout css starts here */
+.price-list{
+    width: 147%;
+    background: white;
+    padding: 31px;
+    border: 1px solid #ddd;
+    margin: 4% 1%;
+}
+.price-list-review{
+        width: 147%;
+        background: white;
+        padding: 31px;
+        border: 1px solid #ddd;
+        margin: 27% -10%;
+}
+.price-list-payment{
+        width: 147%;
+        background: white;
+        padding: 31px;
+        border: 1px solid #ddd;
+        margin: 30% -21%;
+}
+.price-list-1{
+    width: 150%;
+    background: white;
+    padding: 31px;
+    border: 1px solid #ddd;
+    margin: 2% -18%;
+}
+
+.condi-ter{
+    color: #000;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.priced-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+#check-btn{
+    padding: 9% 0%;
+    height: fit-content;
+    width: 194%;
+    font-size: medium;
+    background-color: #fff;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    margin: 38% 0%;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.Signin{
+    display: flex;
+}
+.lines-payment{
+    border: 1px solid #ddd;
+    width: 81%;
+    margin-left: 9%;
+    margin-top: 0%;
+    font-weight: normal;
+}
+.text{
+    text-align: left;
+    margin: 6%;
+    font-size: 18px;
+}
+
+.price-lists{
+    border: 1px solid #ddd;
+    width: 144%;
+    margin: 1%;
+}
+
+.container-shipping {
+    width: 590px;
+    margin: auto;
+    /* background: #fff; */
+    /* padding: 20px; */
+   
+}
+.shipping-form {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    margin: 1% -9%;
+    width: 109%;
+}
+
+.columns {
+    flex: 1;
+    padding: 6px 20px;
+    box-sizing: border-box;
+}
+
+.columns h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.terms{
+    font-weight: 100;
+    text-align: center;
+    margin: 1%;
+}
+
+.Order-quantity{
+    display: flex;
+}
+
+#price-btn{
+    margin: 2% 27%;
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.shipping-forms{
+    display: grid;
+    justify-content: center;
+    border: 1px solid #ddd;
+    margin: 2% -9%;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 109%;
+}
+
+.placeorder{
+    display: grid;
+    justify-content: center;
+    margin: 2%;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.order-social{
+    width: 88%;
+    background: #47b5ff;
+    padding: 40px;
+    margin: 4% 2%;
+    color: #fff;
+    font-size: larger;
+    text-align: center;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 29px;
+    margin: 8% 7%;
+}
+
+
+
+/* heading styling starts here */
+.heading-cart::after{
+    content: '';
+    position: absolute;
+    left: 47.5%;
+    right: 0;
+    bottom: -28%;
+    height: 5px;
+    background: var(--blue);
+    width: 5.5%;
+}
+
+.check::after{
+    content: '';
+    position: absolute;
+    left: 46%;
+    right: 0;
+    bottom: -28%;
+    height: 5px;
+    background: var(--blue);
+    width: 8%;
+}
+
+.collection-content::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -14%;
+    height: 5px;
+    background: var(--blue);
+    width: 18%;
+
+}
+
+.product-headding{
+    position: relative;
+}
+
+.product-headding::after{
+    content: '';
+    position: absolute;
+    left: 41%;
+    right: 0;
+    bottom: -18%;
+    height: 5px;
+    background: var(--blue);
+    width: 22%;
+
+}
+
+.content-3::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    right: 0;
+    bottom: -2rem;
+    height: 4px;
+    background: var(--blue);
+    width: 10%;
+}
+
+#expiry{
+    width: 94%;
+}
+
+#CVV{
+    width: 94%;
+}

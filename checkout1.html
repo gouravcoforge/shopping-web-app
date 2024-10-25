@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section starts -->
+    <div class="headerContainer">
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fa fa-bars"></label>
+            <a href="index.html" class="logo"> VENIA </a>
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="product-detail.html">Women</a>
+                <a href="product-detail.html">Men</a>
+                <a href="product-detail.html">Electronics</a>
+                <a href="#SmartGear">Jewellery</a> 
+            </nav>
+            <div class="icons">
+                <a href="#"><i class='fas fa-shopping-bag'> </i></a>
+            </div>
+        </header>
+    </div>
+    <!-- header section ends -->
+    <section class="checkout-accordian">
+        <h1 class="check">Checkout</h1>
+        <h2 style="margin-left: 1%;">Guest Checkout</h2>
+         <div class="checkout">
+           
+        <div class="checkout-container">
+       
+            <div class="container-shipping-checkout">
+                <form class="shipping-form">
+                    <div class="columns">
+                        <h2>Customer Details</h2>
+                        <label for="email">q_farhan@gmail.com</label>
+                        <label for="tel">+1 (555) 229-3367</label>
+                    </div>
+                   
+                    <div class="columns">
+                        <h2></h2><br>
+                        <label for="address">1098 Wapello Street <br>
+                            Altadena, California 91001 <br>
+                            United States</label>
+                    </div>
+                    <div class="columns">
+                        <h2></h2>
+                        <label ></label>
+                    </div>
+                    <div class="columns">
+                      <p style="color:#1363df;">  <i class="fa-solid fa-pen-to-square" ></i> Edit  </p>
+                    </div>
+                </form>
+           
+            <form class="shipping-form">
+                <div class="columns">
+                    <h2>Shipping Method</h2>
+                    <label for="address">Standard Shipping <br>
+                        Est. delivery in 4 - 8 bussiness days <br>
+                        FREE</label>
+                </div>
+                <div class="columns">
+                    <h2></h2>
+                    <label ></label>
+                </div>
+                <div class="columns">
+                </div>
+               
+                <div class="columns">
+                  <p style="color:#1363df;">  <i class="fa-solid fa-pen-to-square"></i> Edit  </p>
+                </div>
+            </form>
+ 
+            <form class="shipping-form">
+                <div class="columns">
+                    <h2>Payment Information</h2>
+                    <label for="text">Credit Card</label>
+                    <label for="text">Visa Ending in 4567</label>
+                </div>
+                
+                <div class="columns">
+                    <h2></h2>
+                    <label ></label>
+                </div>
+            
+                <div class="columns">
+                  <p style="color:#1363df;">  <i class="fa-solid fa-pen-to-square"></i> Edit  </p>
+                </div>
+            </form>
+ 
+            <form class="shipping-forms" id="order-review">
+                <!-- <h2>Quatity of order</h2> -->  
+            </form>
+        </div> 
+            <button id="price-btn" onclick="window.location.href = './placeorder.html'">Place Order</button>
+            <h5 class="terms">By Clicking confirm order you agree to our <a href="#" class="condi-ter">Terms and Conditions</a></h5>
+        </div>
+        <div> 
+        <div class="price-list-1">
+            <h3 style="font-weight: 100;">Price Summary</h3>
+            <div class="priced-item">
+                <span>Subtotal</span>
+                <span id="subtotal">$388.00</span>
+            </div>
+            <div class="priced-item">
+                <span>Coupon</span>
+                <span id="subtotal">- $77.60</span>
+            </div>
+            <div class="priced-item">
+                <span>Gift Card</span>
+                <span id="subtotal">- $100.00</span>
+            </div>
+            <div class="priced-item">
+                <span>Tax</span>
+                <span id="subtotal">$23.28</span>
+            </div>
+            <div class="priced-item">
+                <span>Shipping</span>
+                <span id="subtotal">Free</span>
+            </div>
+            <div class="priced-item">
+                <span class="total">Order Total</span>
+                <span id="subtotals">$233.68</span>
+            </div>
+        </div>
+ 
+    </div>
+</div>
+</section>
+   <!-- footer section starts here -->
+   <section class="footer">
+    <div class="footer-copyright">
+        <div class="logo-1">
+            <span class="footer-logo">VENIA</span>
+        </div>
+        <div class="copyrights">
+            &copy; Company Name Address Ave, City Name, State ZIP
+        </div>
+        <div class="terms-conditions">
+            <a href="#terms">Terms of Use</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+    </div>
+</section>
+<!-- footer section ends here -->
+<script src="js/review-order.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* footer CSS Starts here */
+.lines-product{
+    border: 1px solid #ddd;
+    width: 81%;
+    margin-left: 9%;
+    /* margin-top: 7%; */
+    font-weight: normal;
+}
+
+.footer-product{
+    padding: 0rem 10%;
+    margin-top: 1%;
+}
+
+.footer-product .box-container{
+    display: flex;
+}
+
+.footer-product .box-container .box{
+    flex: 0 1 16rem;
+}
+
+.footer-product .box-container .box h3{
+ color: #000;
+ font-size: 15px;
+ padding: 1rem 0;
+}
+
+.footer-product .box-container .box a{
+    display: block;
+    color: #545D63;
+    font-size: 15px;
+    padding: 0.5rem 0;
+}
+.footer-product .box-container .box p{
+    color: #545D63;
+}
+
+.footer-product .box-container .box a:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.footer-product .box-container .box .icons{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    gap: 10%;
+}
+
+.footer-product-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    border-top: 0.1rem solid rgba(0,0,0,0.1);
+}
+.footer-product-logo-1{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.copyrights {
+    flex: 1;
+    text-align: center;
+}
+
+.terms-conditions a {
+    color: #172026;
+    text-decoration: underline;
+    margin: 4px;
+}
+
+.terms-conditions a:hover {
+    text-decoration: underline var(--blue);
+}
+
+/* footer CSS ends here */
+
+@media (max-width: 768px) {
+    .footer-product .box-container {
+        flex-direction: column;
+        justify-content: left;
+    }
+}

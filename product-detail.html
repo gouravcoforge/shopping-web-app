@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section starts -->
+    <div class="headerContainer">
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fa fa-bars"></label>
+            <a href="index.html" class="logo"> VENIA </a>
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="product-detail.html">Women</a>
+                <a href="product-detail.html">Men</a>
+                <a href="product-detail.html">Electronics</a>
+                <a href="#SmartGear">Jewellery</a> 
+            </nav>
+            <div class="icons">
+                <a href="#"><i class='fas fa-shopping-bag'> </i></a>
+            </div>
+        </header>
+    </div>
+    <!-- header section ends -->
+    <!-- banner section starts here -->
+<div class="container" >
+    <div class="product-banners" id="page-banner">
+        <div class="product-content">
+            <h1 class="product-headding">Men's <br>Outerwear</h1>
+        </div>
+        <div class="product-contents">
+            <img src="img/banner.png" alt="Left Image">
+        </div>
+    </div>
+</div>
+    <!-- banner section ends here -->
+      <!-- sortsection starts here -->
+      <div class="product-sort">
+        <div class="result-show">
+            <p id="results-count" class="text-show">results</p>
+        </div>
+        <div>
+        <div class="sort-container" id="sort-form">
+            <input onkeyup="onChangeSearch(event)" type="text" id="search-product" placeholder="Type your search here...">
+            <select id="sortOptions" onchange="onChangeSorting(event)">
+                <option disabled selected value="">Select By Price</option>
+                <option value="asc">Price: Low to High</option>
+                <option value="desc">Price: High to Low</option>
+            </select>
+        </div>
+    </div>
+    </div>
+    <!-- sortsection ends here -->
+    <div id="product-card-details" class="card">
+    </div>
+    <div id="product-card-content" class="content">
+    </div>
+    <main id="main-content">
+        <!-- Dynamic content will be loaded here -->
+      </main>
+    <section class="product-section">
+    <div class="product-main">
+        <div class="filterbox" id="filters">
+        </div>
+        <div id="product-list" class="product">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+    <div class="pagination" id="pagination">
+    </div>
+</section>
+  <!-- footer section starts here -->
+  <hr class="lines" id="footer-hr">
+  <section class="footer">
+      <div class="box-container">  
+          <div class="box">
+              <h3>Account</h3>
+              <a href="#">Sign In</a>
+              <a href="#">Register</a>
+              <a href="#">Order Status</a>
+          </div>
+          <div class="box">
+              <h3>About Us</h3>
+              <a href="#">Our Story</a>
+              <a href="#">Careers</a>
+          </div>
+          <div class="box">
+              <h3>Help</h3>
+              <a href="#">Contact Us</a>
+              <a href="#">Orders</a>
+              <a href="#">Returns</a>
+          </div>
+          <div class="box">
+              <h3>Follow Us!</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <div class="icons">
+              <a href="#"><i class="fa-brands fa-instagram" style="color: #000;"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook" style="color: #000;"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter" style="color: #000;"></i></a>
+             </div> 
+          </div>
+      </div>
+      <div class="footer-copyright">
+          <div class="logo-1">
+              <span class="footer-logo">VENIA</span>
+          </div>
+          <div class="copyrights">
+              &copy; Company Name Address Ave, City Name, State ZIP
+          </div>
+          <div class="terms-conditions">
+              <a href="#terms">Terms of Use</a>
+              <a href="#privacy">Privacy Policy</a>
+          </div>
+      </div>
+  </section>
+<!-- footer section ends here -->
+
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/wishlistService.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

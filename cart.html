@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section starts -->
+    <div class="headerContainer">
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fa fa-bars"></label>
+            <a href="index.html" class="logo"> VENIA </a>
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="product-detail.html">Women</a>
+                <a href="product-detail.html">Men</a>
+                <a href="product-detail.html">Electronics</a>
+                <a href="#SmartGear">Jewellery</a> 
+            </nav>
+            <div class="icons">
+                <a href="#"><i class='fas fa-shopping-bag'> </i></a>
+            </div>
+        </header>
+    </div>
+    <!-- header section ends -->
+    <h1 class="heading-cart">Your Shopping Bag</h1>
+    <section class="cards">
+    <div class="cart-container">
+        <div class="cart-items" id="cart-items">
+        </div>
+
+
+        <div class="price-summary" id="cart-price-summary">
+        </div>
+    </div>
+
+</section>
+
+<div class="accordion-containers" id="accordion-containers">
+    <div class="accordions">
+        <div class="accordion-header">
+            Estimate Your Shipping <span class="arrow"><span>Shipping to 91001 </span><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+     
+    </div>
+    <div class="accordions">
+        <div class="accordion-header">
+           Enter a Coupon Code <span class="arrow"><span>20% Disocunt Applied </span><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+     
+    </div>
+    <div class="accordions">
+        <div class="accordion-header">
+            Apply Gift Card <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+     
+    </div>
+</div>
+
+
+    <!-- footer section starts here -->
+    <hr class="lines-cart">
+    <br>
+    <section class="footer">
+        <div class="box-container">
+            
+            <div class="box">
+                <h3>Account</h3>
+                <a href="#">Sign In</a>
+                <a href="#">Register</a>
+                <a href="#">Order Status</a>
+            </div>
+            <div class="box">
+                <h3>About Us</h3>
+                <a href="#">Our Story</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="box">
+                <h3>Help</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Orders</a>
+                <a href="#">Returns</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us!</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+               <div class="icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+               </div> 
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="logo-1">
+                <span class="footer-logo">VENIA</span>
+            </div>
+            <div class="copyrights">
+                &copy; Company Name Address Ave, City Name, State ZIP
+            </div>
+            <div class="terms-conditions">
+                <a href="#terms">Terms of Use</a>
+                <a href="#privacy">Privacy Policy</a>
+            </div>
+        </div>
+    </section>
+<!-- footer section ends here -->
+
+
+
+<script src="js/cart.js"></script>
+<script src="js/accordian.js"></script>
+</body>
+</html>
